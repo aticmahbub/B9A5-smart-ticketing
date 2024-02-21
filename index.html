@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="cupcake" lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P.H Paribahan</title>
@@ -9,6 +10,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
         .raleway {
             font-family: "Raleway", sans-serif;
@@ -18,18 +24,14 @@
             font-family: "Inter", sans-serif;
         }
     </style>
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="container mx-auto">
+    
     <!-- Header starts -->
     <header>
         <!-- Navbar starts -->
@@ -142,7 +144,7 @@
                         </div>
                         <div class="flex items-center justify-between">
                             <div>
-                                <p>40 Seats left</p>
+                                <p><span id="remaining-seats">40</span> Seats left</p>
                             </div>
                             <div><img src="images/seat-green.png" alt=""></div>
                         </div>
@@ -177,13 +179,13 @@
 
                 <div class="flex flex-col justify-center">
                     <img src="images/fare.png" alt="">
-                    <h2>550 Taka</h2>
+                    <h2 id="per-ticket-price">550 Taka</h2>
                     <p>Per Seat</p>
                 </div>
             </div>
             <!-- Seat booking -->
             <div class="flex gap-9">
-                <div class="left w-2/3 right ">
+                <div class=" left w-2/3 right ">
                     <h2>Select Your Seat</h2>
                     <div class="flex justify-between">
                         <div class="flex">
@@ -196,20 +198,16 @@
                         </div>
                     </div>
                     <img class="" src="images/Group 56.svg" alt="">
-                    <div class="seats-container">
+                    <div class="seats-container grid grid-cols-2 gap-4 text-center bg-white">
     
-                        <div class="row-1">
-                            <kbd class="kbd kbd-lg">A1</kbd>
-                            <kbd class="kbd kbd-lg">A2</kbd>
-                            <kbd class="kbd kbd-lg">A3</kbd>
-                            <kbd class="kbd kbd-lg">A4</kbd>
-                        </div>
-                        <div class="row-2">
-                            <kbd class="kbd kbd-lg">A5</kbd>
-                            <kbd class="kbd kbd-lg">A6</kbd>
-                            <kbd class="kbd kbd-lg">A7</kbd>
-                            <kbd class="kbd kbd-lg">A8</kbd>
-                        </div>
+                        <div class=" box"><button class="seat-click">A2</button></div>
+                        <div class=" box"><button class="seat-click">A1</button></div>
+                        <div class=" box"><button class="seat-click">A3</button></div>
+                        <div class=" box"><button class="seat-click">A4</button></div>
+                        <div class=" box"><button class="seat-click">B1</button></div>
+                        <div class=" box"><button class="seat-click">B2</button></div>
+                        <div class=" box"><button class="seat-click">B3</button></div>
+                        <div class=" box"><button class="seat-click">B4</button></div>
     
                     </div>
                 </div>
@@ -221,26 +219,47 @@
                         <div><p>Class</p></div>
                         <div><p>Price</p></div>
                     </div>
+                    <div id="selected-seats">
+
+                    </div>
                     <div class="flex justify-around ">
                         <div><p>Total Price</p></div>
-                        <div><p>BDT</p></div>
+                        <div><p>BDT <span id="total-cost">00</span></s></p></div>
                     </div>
                     <div class="flex">
-                        <input placeholder="Have any coupon?" type="text">
-                        <button>Apply</button>
+                        <input placeholder="Have any coupon?" type="text" id="inserted-coupon">
+                        <button onclick="updateGrandTotal('apply-btn')" id="btn-coupon">Apply</button>
                         
                     </div>
                     <div class="flex justify-around ">
                         <div><p>Grand Total</p></div>
-                        <div><p>BDT</p></div>
+                        <div><p>BDT <span id="grand-total-cost">00</span></p></div>
                     </div>
                    </div>
                 </div>
             </div>
+            <button>Next</button>
+            <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4"></p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
         </section>
     </main>
     <!-- Main ends -->
 
+    <!-- scripts -->
+    
+    <script src="scripts/functionalities.js"></script>
 </body>
 
 </html>
