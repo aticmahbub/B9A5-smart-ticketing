@@ -15,7 +15,7 @@ for (const seatClick of allSeats) {
 
 
         const seatCounts = getConvertedValue('remaining-seats')
-        if (seatCounts < 37) {
+        if (seatCounts < 5) {
             alert('One can not buy more than 4 tickets at a time')
             return
         }
