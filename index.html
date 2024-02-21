@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.H Paribahan</title>
+    <!-- Tailwind CSS & DaisyUI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="container mx-auto">
+    <!-- Header starts -->
+    <header>
+        <!-- Navbar starts -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn">Bus<img src="images/bus-icon.svg" alt=""></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar ends -->
+
+        <!-- Banner section -->
+        <section class="banner-section hidden">
+            <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with P Paribahan</h1>
+                        <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
+                            integrated testing features allow for a streamlined .</p>
+                        <button class="btn btn-primary">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bannser ends -->
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main section -->
+    <main>
+        <!-- Offer section-->
+        <section class="offers hidden">
+            <h1>Best offers for you</h1>
+            <div class="coupon-container flex">
+
+                <div class="coupon-15">
+                    <div>
+                        <h2>15% OFF</h2>
+                        <p>on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div>
+                        <h2>NEW15</h2>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+
+                <div class="coupon-20">
+                    <div>
+                        <h2>15% OFF</h2>
+                        <p>on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div>
+                        <h2>NEW15</h2>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <button class="">See All Offers</button>
+            </div>
+
+        </section>
+        <!-- Functionality section -->
+        <section class="functionality-container space-y-5">
+            <div class="text-center">
+                <h2 class="text-3xl">P.H Paribahan</h2>
+                <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                    features allow for a streamlined .</p>
+            </div>
+            <!-- Ticket info -->
+            <div class="ticket-info flex justify-between">
+                <div class="w-5/6">
+                    <div class="flex gap-4 justify-between">
+                        <div class="flex gap-5">
+                            <img class="w-16 h-12" src="images/bus-logo.png" alt="">
+                            <div>
+                                <h2 class="font-bold text-3xl">Greenline Paribahan</h2>
+                                <p class="inter text-sm font-light">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p>40 Seats left</p>
+                            </div>
+                            <div><img src="images/seat-green.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-lg bg-[#F7F8F8] flex flex-col space-y-10">
+                        <div class="flex flex-col space-y-5">
+                            <div class="flex justify-between ">
+                                <p>Route</p>
+                                <p class="">Dhaka - Sylhet</p>
+                            </div>
+                            <hr>
+                            <div class="flex justify-between">
+                                <p>Departure Time</p>
+                                <p>9:00 PM</p>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="flex  justify-around">
+                            <div>
+                                <p>Boarding Point - Laxmipur</p>
+                            </div>
+                            <div>
+                                <p>Dropping Point - Bogura</p>
+                            </div>
+                            <div>
+                                <p>Est. Time - 11 Hour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <img src="images/fare.png" alt="">
+                    <h2>550 Taka</h2>
+                    <p>Per Seat</p>
+                </div>
+            </div>
+            <!-- Seat booking -->
+            <div class="flex gap-9">
+                <div class="left w-2/3 right ">
+                    <h2>Select Your Seat</h2>
+                    <div class="flex justify-between">
+                        <div class="flex">
+                            <img src="images/seat-gray.png" alt="">
+                            <p>Available</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/seat-green-filled.png" alt="">
+                            <p>Selected</p>
+                        </div>
+                    </div>
+                    <img class="" src="images/Group 56.svg" alt="">
+                    <div class="seats-container">
+    
+                        <div class="row-1">
+                            <kbd class="kbd kbd-lg">A1</kbd>
+                            <kbd class="kbd kbd-lg">A2</kbd>
+                            <kbd class="kbd kbd-lg">A3</kbd>
+                            <kbd class="kbd kbd-lg">A4</kbd>
+                        </div>
+                        <div class="row-2">
+                            <kbd class="kbd kbd-lg">A5</kbd>
+                            <kbd class="kbd kbd-lg">A6</kbd>
+                            <kbd class="kbd kbd-lg">A7</kbd>
+                            <kbd class="kbd kbd-lg">A8</kbd>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="right w-2/5 ">
+                    <h2>Select your seat</h2>
+                   <div class="bg-[#F7F8F8] rounded-lg p-7 space-y-10">
+                    <div class="flex justify-around ">
+                        <div><p>Seat</p></div>
+                        <div><p>Class</p></div>
+                        <div><p>Price</p></div>
+                    </div>
+                    <div class="flex justify-around ">
+                        <div><p>Total Price</p></div>
+                        <div><p>BDT</p></div>
+                    </div>
+                    <div class="flex">
+                        <input placeholder="Have any coupon?" type="text">
+                        <button>Apply</button>
+                        
+                    </div>
+                    <div class="flex justify-around ">
+                        <div><p>Grand Total</p></div>
+                        <div><p>BDT</p></div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main ends -->
+
+</body>
+
+</html>
