@@ -78,7 +78,7 @@ function updateGrandTotal(status) {
             const hideCoupon = document.getElementById('hide-coupon')
             hideCoupon.classList.add("hidden");
         }
-        else if (couponCode == 'COUPLE20') {
+        else if (couponCode == 'Couple 20') {
             const discount = totalCost * 0.20
             
             document.getElementById('grand-total-cost').innerText = totalCost - discount;
